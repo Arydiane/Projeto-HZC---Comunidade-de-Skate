@@ -277,6 +277,18 @@ body {
     grid-column: span 2;
 }
 
+.cartao__perfil--destaque {
+    height: 32px;
+    padding-left: 40px;
+    background-image: url(../img/profile_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: center;
+}
+
+
 .cartao__info {
     display: flex;
     align-items: center;
@@ -340,6 +352,7 @@ body {
     margin-right: 8px;
 }
 
+
 .cartao--recentes {
     display: none;
 }
@@ -361,6 +374,13 @@ body {
         grid-column: auto;
         padding: 16px 8px;
     }
+
+    .cartao__botao--video {
+        grid-row: 2;
+        grid-column: 3 /3;
+    
+    }
+
     .cartao--recentes {
         display: grid;
         grid-template-columns: auto auto;
