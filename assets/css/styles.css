@@ -239,6 +239,10 @@ body {
     background-color: var(--cartao);
 }
 
+.cartao__imagem {
+    width: 100%;
+}
+
 .cartao__imagem--desktop {
     display: none;
 }
@@ -319,6 +323,11 @@ body {
 
 .cartao__info--preco::before {
     content: "\e905";
+    font-size: 24px;
+}
+
+.cartao__botao--localizacao::before {
+    content: "\e909";
     font-size: 24px;
 }
 
