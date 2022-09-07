@@ -239,6 +239,10 @@ body {
     background-color: var(--cartao);
 }
 
+.cartao:hover {
+    box-shadow: var(--sombras);
+}
+
 .cartao__imagem {
     width: 100%;
 }
