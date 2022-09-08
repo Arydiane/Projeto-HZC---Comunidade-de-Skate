@@ -191,6 +191,7 @@ body {
     }
 }
 
+.principal--pico,
 .principal {
     padding: 24px 16px;
     display: grid;
@@ -203,7 +204,7 @@ body {
 }
 
 .titulo-secao {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -227,9 +228,24 @@ body {
         grid-column: 2;
     }
 
+    .principal--pico {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+            "artigo__imagem--destaque secao__picos-similares"
+            "titulo-pagina secao__picos-similares"
+            "primeira-secao secao__picos-similares"
+            ;
+        column-gap: 32px;
+        padding: 16px 60px;
+        grid-column: 2;
+    }
+
     .titulo-secao{
         grid-column: span 4;
     }
+
+
 }
 
 .cartao {
@@ -270,7 +286,7 @@ body {
 }
 
 .cartao__titulo {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     grid-column: span 2;
     
@@ -425,7 +441,7 @@ body {
     }
 
     .cartao__item--titulo {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         line-height: 1.2rem;
         font-weight: 700;
     }
@@ -434,11 +450,17 @@ body {
         font-size: 0.8rem;
         color: var(--cor-fonte-alternativa);
     }
+
+
 }
 
 .secao {
     display: grid;
     gap: 16px;
+}
+
+.secao__picos-similares {
+    display: none
 }
 
 @media screen and (min-width: 1024px) {
@@ -469,6 +491,18 @@ body {
     .secao-produtos {
         grid-area: secao-produtos;
     }
+
+    .secao__picos-similares {
+        display: flex;
+        flex-direction: column;
+        grid-area: secao__picos-similares;
+        font-size: 0.8rem;
+    }
+
+    .artigo__imagem--bloco {
+        max-height: 256px;
+    }
+
 }
 
 .artigo__cartao-autoria {
@@ -483,12 +517,21 @@ body {
     line-height: 32px;
 }
 
+
+.artigo__imagem {
+    margin: 16px 0;
+}
+
+
 .artigo__bloco-imagens {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.artigo__imagem {
-    margin: 16px 0;
+@media screen and (min-width: 1024px) {
+    .artigo__bloco-imagens {
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
 }
