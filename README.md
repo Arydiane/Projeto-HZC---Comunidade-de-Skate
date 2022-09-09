@@ -2,6 +2,7 @@
 
 <p>Projeto desenvolvido no curso de flexbox e grid da Alura. </p>
 <p>O projeto foi construído utilizando a técnica mobile first e com padrão de nomenclatura de classes BEM.</p> 
+<p>Contém algumas alterações como estilizações e refatoração de código.</p>
 
 
 ## 💻 Layout  
