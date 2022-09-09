@@ -30,8 +30,11 @@
     </nav>
     <main class="principal">
         <h2 class="titulo-pagina">Picos</h2>
-        <img src="assets/img/mapa-picos-mobile.png" alt="Mapa dos picos" class="cartao__imagem cartao__imagem--mobile">
-        <img src="assets/img/mapa-picos.png" alt="Mapa dos picos" class="cartao__imagem cartao__imagem--desktop">
+        <picture>
+            <source srcset="assets/img/mapa-picos.png" media="(min-width: 1024px)" >
+            <img src="assets/img/mapa-picos-mobile.png" alt="Mapa dos picos" class="cartao__imagem">
+        </picture>
+        
         <section class="secao primeira-secao">
             <h3 class="titulo-secao">Mais visitados</h3>
             <article class="cartao">

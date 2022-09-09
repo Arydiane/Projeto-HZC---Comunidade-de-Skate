@@ -34,8 +34,10 @@
     <main class="principal">
         <h2 class="titulo-pagina">Vídeos</h2>
         <article class="cartao cartao--destaque primeiro-destaque">
-            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--mobile">
-            <img src="assets/img/banner_1.png" alt="Banner do cartão" class="cartao__imagem cartao__imagem--desktop">
+            <picture>
+                <source srcset="assets/img/banner_1.png" media="(min-width: 1024px)" >
+                <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao__imagem">
+            </picture>
             <div class="cartao__conteudo">
                 <p class="cartao__destaque">Vídeo em destaque</p>
                 <h3 class="cartao__titulo">HZC - Life is... / 2021</h3>
