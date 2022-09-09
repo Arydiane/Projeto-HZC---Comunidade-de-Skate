@@ -264,10 +264,6 @@ body {
     width: 100%;
 }
 
-.cartao__imagem--desktop {
-    display: none;
-}
-
 .cartao--destaque {
      margin-bottom: 16px;
 }
@@ -380,14 +376,6 @@ body {
 @media screen and (min-width: 1024px) {
     .cartao--destaque {
         margin-bottom: 0;
-    }
-
-    .cartao__imagem--desktop {
-        display: block;
-    }
-
-    .cartao__imagem--mobile {
-        display: none;
     }
 
     .cartao__botao--destaque {
